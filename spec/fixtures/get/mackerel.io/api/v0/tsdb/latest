@@ -1,0 +1,8 @@
+{
+  "tsdbLatest": {
+    "DUMMY": {
+      "cpu.user.percentage": null,
+        "loadavg5": null
+    }
+  }
+}

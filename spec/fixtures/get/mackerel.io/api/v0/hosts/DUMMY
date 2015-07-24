@@ -1,0 +1,186 @@
+{
+  "host": {
+    "name": "www001.mackerel-rb.dev",
+    "nickname": null,
+    "displayName": "www001.mackerel-rb.dev",
+    "meta": {
+      "agent-name": "mackerel-agent/0.18.1 (Revision 8a7aa18)",
+      "agent-revision": "8a7aa18",
+      "agent-version": "0.18.1",
+      "block_device": {
+        "dm-0": {
+          "removable": "0",
+          "size": "2162688"
+        },
+        "dm-1": {
+          "removable": "0",
+          "size": "38748160"
+        },
+        "sda": {
+          "model": "VBOX HARDDISK",
+          "removable": "0",
+          "rev": "1.0",
+          "size": "41943040",
+          "state": "running",
+          "timeout": "30",
+          "vendor": "ATA"
+        }
+      },
+      "cpu": [
+        {
+          "cache_size": "3072 KB",
+          "core_id": "0",
+          "cores": "1",
+          "family": "6",
+          "flags": [
+            "fpu",
+            "vme",
+            "de",
+            "pse",
+            "tsc",
+            "msr",
+            "pae",
+            "mce",
+            "cx8",
+            "apic",
+            "sep",
+            "mtrr",
+            "pge",
+            "mca",
+            "cmov",
+            "pat",
+            "pse36",
+            "clflush",
+            "mmx",
+            "fxsr",
+            "sse",
+            "sse2",
+            "syscall",
+            "nx",
+            "rdtscp",
+            "lm",
+            "constant_tsc",
+            "rep_good",
+            "nopl",
+            "xtopology",
+            "nonstop_tsc",
+            "pni",
+            "pclmulqdq",
+            "monitor",
+            "ssse3",
+            "cx16",
+            "sse4_1",
+            "sse4_2",
+            "movbe",
+            "popcnt",
+            "aes",
+            "xsave",
+            "avx",
+            "rdrand",
+            "lahf_lm",
+            "abm",
+            "avx2"
+          ],
+          "mhz": "2600.015",
+          "model": "69",
+          "model_name": "Intel(R) Core(TM) i5-4278U CPU @ 2.60GHz",
+          "physical_id": "0",
+          "stepping": "1",
+          "vendor_id": "GenuineIntel"
+        }
+      ],
+      "filesystem": {
+        "/dev/mapper/centos-root": {
+          "kb_available": 18200060,
+          "kb_size": 19363840,
+          "kb_used": 1163780,
+          "mount": "/",
+          "percent_used": "7%"
+        },
+        "/dev/sda1": {
+          "kb_available": 391224,
+          "kb_size": 508588,
+          "kb_used": 117364,
+          "mount": "/boot",
+          "percent_used": "24%"
+        },
+        "devtmpfs": {
+          "kb_available": 241760,
+          "kb_size": 241760,
+          "kb_used": 0,
+          "mount": "/dev",
+          "percent_used": "0%"
+        },
+        "none": {
+          "kb_available": 187230668,
+          "kb_size": 243949056,
+          "kb_used": 56718388,
+          "mount": "/vagrant",
+          "percent_used": "24%"
+        },
+        "tmpfs": {
+          "kb_available": 251084,
+          "kb_size": 251084,
+          "kb_used": 0,
+          "mount": "/sys/fs/cgroup",
+          "percent_used": "0%"
+        }
+      },
+      "kernel": {
+        "machine": "x86_64",
+        "name": "Linux",
+        "os": "GNU/Linux",
+        "release": "3.10.0-123.20.1.el7.x86_64",
+        "version": "#1 SMP Thu Jan 29 18:05:33 UTC 2015"
+      },
+      "memory": {
+        "active": "162608kB",
+        "anon_pages": "66464kB",
+        "bounce": "0kB",
+        "buffers": "764kB",
+        "cached": "175876kB",
+        "commit_limit": "1332424kB",
+        "committed_as": "313680kB",
+        "dirty": "19216kB",
+        "free": "203752kB",
+        "inactive": "80484kB",
+        "mapped": "24636kB",
+        "nfs_unstable": "0kB",
+        "page_tables": "4728kB",
+        "slab": "31316kB",
+        "slab_reclaimable": "20412kB",
+        "slab_unreclaim": "10904kB",
+        "swap_cached": "0kB",
+        "swap_free": "1081340kB",
+        "swap_total": "1081340kB",
+        "total": "502168kB",
+        "vmalloc_chunk": "34359721268kB",
+        "vmalloc_total": "34359738367kB",
+        "vmalloc_used": "9092kB",
+        "writeback": "0kB"
+      }
+    },
+    "type": "unknown",
+    "status": "standby",
+    "memo": "",
+    "isRetired": false,
+    "id": "2rUwGN9Vdrw",
+    "createdAt": 1437422856,
+    "roles": {
+    },
+    "interfaces": [
+      {
+        "ipAddress": "192.168.33.2",
+        "ipv6Address": "fe80::a00:27ff:fece:b764",
+        "macAddress": "08:00:27:ce:b7:64",
+        "name": "enp0s8"
+      },
+      {
+        "ipAddress": "10.0.2.15",
+        "ipv6Address": "fe80::a00:27ff:fe19:cd16",
+        "macAddress": "08:00:27:19:cd:16",
+        "name": "enp0s3"
+      }
+    ]
+  }
+}

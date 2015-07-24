@@ -1,0 +1,13 @@
+/.bundle/
+/.vagrant
+/.yardoc
+/Gemfile.lock
+/_yardoc/
+/bin/console
+/bin/setup
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+**/*.swp
