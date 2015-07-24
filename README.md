@@ -27,11 +27,11 @@ end
 ## Feature
 
 - [x]  GET  /api/v0/hosts.json
-- [ ]  POST /api/v0/hosts
+- [x]  POST /api/v0/hosts
 - [x]  GET  /api/v0/hosts/<hostId>
-- [ ]  PUT  /api/v0/hosts/<hostId>
-- [ ]  POST /api/v0/hosts/<hostId>/status
-- [ ]  POST /api/v0/hosts/<hostId>/retire
+- [x]  PUT  /api/v0/hosts/<hostId>
+- [x]  POST /api/v0/hosts/<hostId>/status
+- [x]  POST /api/v0/hosts/<hostId>/retire
 - [ ]  POST /api/v0/tsdb
 - [x]  GET  /api/v0/tsdb/latest
 - [ ]  POST /api/v0/services/<serviceName>/tsdb
