@@ -1,6 +1,6 @@
 module Mackerel
   class Client
-    module Hosts
+    module Host
       def hosts(options = {})
         response = get 'hosts.json', options
         response.body.hosts
