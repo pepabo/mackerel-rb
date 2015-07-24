@@ -26,11 +26,12 @@ module Mackerel
       end
 
       def http_request_headers
-        {
+        headers = {
           'Accept'     => http_accept,
           'User-Agent' => user_agent,
           'X-Api-Key'  => api_key,
         }
+        headers.select {|_, v| !!v}
       end
     end
   end
