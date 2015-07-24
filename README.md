@@ -4,9 +4,7 @@
 
 Add this line to your application's Gemfile:
 
-```ruby
-gem 'mackerel-rb'
-```
+    $ gem 'mackerel-rb'
 
 And then execute:
 
@@ -18,11 +16,16 @@ Or install it yourself as:
 
 ## Usage
 
-```ruby
+```rb
+Mackerel.configure do |config|
+  config.api_key = "<Your API Key>"   # Default: ENV['MACKEREL_APIKEY']
+end
+
 hosts = Mackerel.hosts
 hosts.each do |host|
-  puts host
+  puts host.name
 end
+```
 
 ## Feature
 
