@@ -23,7 +23,8 @@ Or install it yourself as:
 
 ```rb
 Mackerel.configure do |config|
-  config.api_key = "<Your API Key>"   # Default: ENV['MACKEREL_APIKEY']
+  config.api_key = "<Your API Key>"               # Default: ENV['MACKEREL_APIKEY']
+  config.proxy   = "http://proxy.example.com:80"  # Default: nil (Not use http proxy)
 end
 
 hosts = Mackerel.hosts

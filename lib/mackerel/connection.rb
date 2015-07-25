@@ -20,7 +20,7 @@ module Mackerel
     end
 
     def connection
-      @connection ||= Faraday.new(url: config.api_endpoint, headers: config.http_request_headers, request: config.request) do |faraday|
+      @connection ||= Faraday.new(url: config.api_endpoint, headers: config.http_request_headers, request: config.request, proxy: config.proxy) do |faraday|
         faraday.use Mackerel::Response::RaiseError
         faraday.use Faraday::Response::Logger if ENV['DEBUG'] == '1'
         faraday.use FaradayMiddleware::Mashify

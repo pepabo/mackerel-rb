@@ -9,7 +9,7 @@ module Mackerel
     end
 
     class Config
-      attr_accessor :api_endpoint, :api_key, :http_accept, :params_encoder, :request, :user_agent
+      attr_accessor :api_endpoint, :api_key, :http_accept, :params_encoder, :proxy, :request, :user_agent
 
       def initialize
         @api_endpoint   = 'https://mackerel.io/api/v0'
@@ -17,6 +17,7 @@ module Mackerel
         @http_accept    = 'application/json'
         @user_agent     = "Mackerel.rb Ruby Gem #{Mackerel::VERSION}"
         @params_encoder = Faraday::FlatParamsEncoder
+        @proxy          = nil
       end
 
       def request
