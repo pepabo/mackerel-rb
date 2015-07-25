@@ -1,4 +1,4 @@
-# mackerel-rb
+# mackerel-rb [![Build Status](https://travis-ci.org/mizoR/mackerel-rb.svg)](https://travis-ci.org/mizoR/mackerel-rb)
 
 ## Installation
 
