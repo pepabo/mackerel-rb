@@ -14,6 +14,20 @@ describe Mackerel do
     end
   end
 
+  describe '.#respond_to' do
+    subject { described_class }
+
+    it { is_expected.to be_respond_to(:hosts) }
+    it { is_expected.to be_respond_to(:host) }
+    it { is_expected.to be_respond_to(:create_host) }
+    it { is_expected.to be_respond_to(:update_host) }
+    it { is_expected.to be_respond_to(:retire_host) }
+    it { is_expected.to be_respond_to(:update_host_status) }
+    it { is_expected.to be_respond_to(:create_tsdb) }
+    it { is_expected.to be_respond_to(:latest_tsdb) }
+    it { is_expected.to be_respond_to(:create_service_tsdb) }
+  end
+
   it 'has a version number' do
     expect(Mackerel::VERSION).not_to be nil
   end
