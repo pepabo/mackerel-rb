@@ -26,6 +26,7 @@ describe Mackerel do
     it { is_expected.to be_respond_to(:create_tsdb) }
     it { is_expected.to be_respond_to(:latest_tsdb) }
     it { is_expected.to be_respond_to(:create_service_tsdb) }
+    it { is_expected.to be_respond_to(:create_monitoring_check_report) }
   end
 
   it 'has a version number' do

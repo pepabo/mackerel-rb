@@ -44,7 +44,7 @@ end
 - [x]  `POST /api/v0/tsdb`
 - [x]  `GET  /api/v0/tsdb/latest`
 - [x]  `POST /api/v0/services/<serviceName>/tsdb`
-- [ ]  `POST /api/v0/monitoring/checks/report`
+- [x]  `POST /api/v0/monitoring/checks/report`
 
 ## Contributing
 

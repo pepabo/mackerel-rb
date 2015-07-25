@@ -4,6 +4,7 @@ require 'mackerel/client/host'
 require 'mackerel/client/host_status'
 require 'mackerel/client/tsdb'
 require 'mackerel/client/service_tsdb'
+require 'mackerel/client/monitoring_check_report'
 require 'mackerel/response/raise_error'
 
 module Mackerel
@@ -15,5 +16,6 @@ module Mackerel
     include Client::HostStatus
     include Client::Tsdb
     include Client::ServiceTsdb
+    include Client::MonitoringCheckReport
   end
 end
