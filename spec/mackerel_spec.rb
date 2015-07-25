@@ -24,8 +24,11 @@ describe Mackerel do
     it { is_expected.to be_respond_to(:retire_host) }
     it { is_expected.to be_respond_to(:update_host_status) }
     it { is_expected.to be_respond_to(:create_tsdb) }
+    it { is_expected.to be_respond_to(:create_metrics) }
     it { is_expected.to be_respond_to(:latest_tsdb) }
+    it { is_expected.to be_respond_to(:latest_metrics) }
     it { is_expected.to be_respond_to(:create_service_tsdb) }
+    it { is_expected.to be_respond_to(:create_service_metrics) }
     it { is_expected.to be_respond_to(:create_monitoring_check_report) }
   end
 

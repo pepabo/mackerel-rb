@@ -5,6 +5,7 @@ module Mackerel
         response = post "service/#{service_name}/tsdb", params
         response.body
       end
+      alias :create_service_metrics :create_service_tsdb
     end
   end
 end
