@@ -9,7 +9,7 @@
 
 Add this line to your application's Gemfile:
 
-    $ gem 'mackerel-rb'
+    gem 'mackerel-rb'
 
 And then execute:
 
