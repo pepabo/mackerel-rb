@@ -41,7 +41,7 @@ end
 - [x]  `PUT  /api/v0/hosts/<hostId>`
 - [x]  `POST /api/v0/hosts/<hostId>/status`
 - [x]  `POST /api/v0/hosts/<hostId>/retire`
-- [ ]  `POST /api/v0/tsdb`
+- [x]  `POST /api/v0/tsdb`
 - [x]  `GET  /api/v0/tsdb/latest`
 - [ ]  `POST /api/v0/services/<serviceName>/tsdb`
 - [ ]  `POST /api/v0/monitoring/checks/report`
