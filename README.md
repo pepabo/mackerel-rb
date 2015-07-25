@@ -1,4 +1,8 @@
-# mackerel-rb [![Build Status](https://travis-ci.org/mizoR/mackerel-rb.svg)](https://travis-ci.org/mizoR/mackerel-rb)
+# mackerel-rb
+[![Build Status](https://travis-ci.org/mizoR/mackerel-rb.svg)](https://travis-ci.org/mizoR/mackerel-rb)
+[![Code Climate](https://codeclimate.com/github/mizoR/mackerel-rb/badges/gpa.svg)](https://codeclimate.com/github/mizoR/mackerel-rb)
+[![Dependency Status](https://gemnasium.com/mizoR/mackerel-rb.svg)](https://gemnasium.com/mizoR/mackerel-rb)
+
 
 ## Installation
 
