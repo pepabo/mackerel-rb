@@ -11,13 +11,13 @@ module Mackerel
         response.body.host
       end
 
-      def create_host(options)
-        response = post "hosts"
+      def create_host(params)
+        response = post "hosts", params
         response.body.host
       end
 
-      def update_host(id, options)
-        response = put "hosts/#{id}"
+      def update_host(id, params)
+        response = put "hosts/#{id}", params
         response.body
       end
 
