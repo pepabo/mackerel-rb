@@ -1,5 +1,6 @@
 require 'mackerel/configuration'
 require 'mackerel/connection'
+require 'mackerel/client/dashboard'
 require 'mackerel/client/host'
 require 'mackerel/client/host_status'
 require 'mackerel/client/tsdb'
@@ -13,6 +14,7 @@ module Mackerel
     include Configuration
     include Connection
 
+    include Client::Dashboard
     include Client::Host
     include Client::HostStatus
     include Client::Tsdb
