@@ -38,7 +38,7 @@ end
 
 #### Services
 
-- [ ] List of Services - `GET/api/v0/services`
+- [x] List of Services - `GET/api/v0/services`
 
 #### Roles
 
