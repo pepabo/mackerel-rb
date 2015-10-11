@@ -42,7 +42,7 @@ end
 
 #### Roles
 
-- [ ] List of Roles - `GET/api/v0/services/<serviceName>/roles`
+- [x] List of Roles - `GET/api/v0/services/<serviceName>/roles`
 
 #### Hosts
 
