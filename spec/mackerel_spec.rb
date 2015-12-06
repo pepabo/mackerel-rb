@@ -85,7 +85,7 @@ describe Mackerel do
   end
 
   describe '.#host_metrics' do
-  let(:host_id) { 'METRICS_DUMMY' }
+    let(:host_id) { 'METRICS_DUMMY' }
     before do
       stub_api(:get, "/v0/hosts/#{host_id}/metrics?name=loadavg5")
     end
