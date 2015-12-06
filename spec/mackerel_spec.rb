@@ -22,6 +22,7 @@ describe Mackerel do
     it { is_expected.to be_respond_to(:create_host) }
     it { is_expected.to be_respond_to(:update_host) }
     it { is_expected.to be_respond_to(:retire_host) }
+    it { is_expected.to be_respond_to(:host_metrics) }
     it { is_expected.to be_respond_to(:update_host_status) }
     it { is_expected.to be_respond_to(:create_tsdb) }
     it { is_expected.to be_respond_to(:create_metrics) }
@@ -82,6 +83,22 @@ describe Mackerel do
       expect(host_status.success).to be_truthy
     end
   end
+
+  describe '.#host_metrics' do
+  let(:host_id) { 'METRICS_DUMMY' }
+    before do
+      stub_api(:get, "/v0/hosts/#{host_id}/metrics?name=loadavg5")
+    end
+
+    let!(:host_metrics) {
+      described_class.host_metrics(host_id, name: "loadavg5")
+    }
+
+    it do
+      expect(host_metrics).to be_a Hash
+    end
+  end
+
 
   describe '.#latest_tsdb' do
     before do

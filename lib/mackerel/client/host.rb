@@ -25,6 +25,11 @@ module Mackerel
         response = post "hosts/#{id}/retire"
         response.body
       end
+
+      def host_metrics(id, params)
+        response = get "hosts/#{id}/metrics", params
+        response.body
+      end
     end
   end
 end
