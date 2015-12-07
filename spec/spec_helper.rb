@@ -5,6 +5,7 @@ require 'webmock/rspec'
 def stub_api(method, path)
   url = "https://mackerel.io/api#{path}"
   file = url.gsub('https://', "spec/fixtures/#{method}/").sub(/\?.+$/, '')
+  file << '_list' if File.directory?(file)
   stub_request(method, url).to_return(status: 200, body: File.read(file))
 end
 
