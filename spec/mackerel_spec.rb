@@ -99,7 +99,6 @@ describe Mackerel do
     end
   end
 
-
   describe '.#latest_tsdb' do
     before do
       stub_api(:get, "/v0/tsdb/latest?hostId=DUMMY&name=loadavg5")
