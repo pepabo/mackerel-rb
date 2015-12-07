@@ -71,10 +71,10 @@ end
 
 #### Dashboards
 
-- [ ] Creating Dashboards - `POST/api/v0/dashboards`
+- [x] Creating Dashboards - `POST/api/v0/dashboards`
 - [x] Getting Dashboards - `GET/api/v0/dashboards/<dashboardId>`
-- [ ] Updating Dashboards - `PUT/api/v0/dashboards/<dashboardId>`
-- [ ] Deleting Dashboards - `DELETE/api/v0/dashboards/<dashboardId>`
+- [x] Updating Dashboards - `PUT/api/v0/dashboards/<dashboardId>`
+- [x] Deleting Dashboards - `DELETE/api/v0/dashboards/<dashboardId>`
 - [x] List of Dashboards - `GET/api/v0/dashboards`
 
 ## Contributing
