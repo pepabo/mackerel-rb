@@ -7,7 +7,7 @@ module Mackerel
       end
 
       def dashboard(id)
-        response = get 'dashboards', id
+        response = get "dashboards/#{id}"
         response.body
       end
     end
