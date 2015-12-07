@@ -1,0 +1,12 @@
+{
+  "dashboards": [
+    {
+      "id": "DUMMY",
+      "title": "My Dashboard",
+      "body": "# A test dashboard",
+      "urlPath": "2u4PP3TJqbu",
+      "createdAt": 1439346145003,
+      "updatedAt": 1439346145003
+    }
+  ]
+}

@@ -15,6 +15,19 @@ module Mackerel
       end
     end
 
+    def put(url, params = {})
+      connection.put(url) do |req|
+        req.headers['Content-Type'] = 'application/json'
+        req.body = params.to_json
+      end
+    end
+
+    def delete(url)
+      connection.delete(url) do |req|
+        req.headers['Content-Type'] = 'application/json'
+      end
+    end
+
     def request(method, url, params = {})
       connection.send(method, url, params)
     end
