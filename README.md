@@ -1,8 +1,8 @@
 # mackerel-rb
 [![Gem Version](https://badge.fury.io/rb/mackerel-rb.svg)](http://badge.fury.io/rb/mackerel-rb)
-[![Build Status](https://travis-ci.org/mizoR/mackerel-rb.svg)](https://travis-ci.org/mizoR/mackerel-rb)
-[![Code Climate](https://codeclimate.com/github/mizoR/mackerel-rb/badges/gpa.svg)](https://codeclimate.com/github/mizoR/mackerel-rb)
-[![Dependency Status](https://gemnasium.com/mizoR/mackerel-rb.svg)](https://gemnasium.com/mizoR/mackerel-rb)
+[![Build Status](https://travis-ci.org/pepabo/mackerel-rb.svg)](https://travis-ci.org/pepabo/mackerel-rb)
+[![Code Climate](https://codeclimate.com/github/pepabo/mackerel-rb/badges/gpa.svg)](https://codeclimate.com/github/pepabo/mackerel-rb)
+[![Dependency Status](https://gemnasium.com/pepabo/mackerel-rb.svg)](https://gemnasium.com/pepabo/mackerel-rb)
 
 
 ## Installation
@@ -79,7 +79,7 @@ end
 
 ## Contributing
 
-1. Fork it ( https://github.com/mizoR/mackerel-rb/fork )
+1. Fork it ( https://github.com/pepabo/mackerel-rb/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
