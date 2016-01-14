@@ -8,6 +8,7 @@ describe Mackerel::Client::Alert do
       stub_api(:get, '/v0/alerts')
       res = Mackerel.alerts
       expect(res).to be_a Array
+      expect(res.size).to be 1
     end
   end
 
