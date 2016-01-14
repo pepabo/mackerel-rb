@@ -1,0 +1,11 @@
+{
+  "id": "DUMMY",
+  "status": "CRITICAL",
+  "monitorId": "2u4PP3TJqbu",
+  "type": "check",
+  "reason": "This is a dummy alert.",
+  "openedAt": 1452564290,
+  "closedAt": 1452564291,
+  "hostId": "2u4PP3TJqbu",
+  "message": "DUMMY CRITICAL: A dummy text | dummy=0;;1:;0;"
+}

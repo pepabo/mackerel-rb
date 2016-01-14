@@ -77,6 +77,11 @@ end
 - [x] Deleting Dashboards - `DELETE/api/v0/dashboards/<dashboardId>`
 - [x] List of Dashboards - `GET/api/v0/dashboards`
 
+#### Alerts
+
+- [x] List of Alerts - `GET/api/v0/alerts`
+- [x] Closing Alert - `POST/api/v0/alerts/<alertId>/close`
+
 ## Contributing
 
 1. Fork it ( https://github.com/pepabo/mackerel-rb/fork )
