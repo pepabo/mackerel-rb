@@ -3,6 +3,7 @@ require 'mackerel/connection'
 require 'mackerel/client/dashboard'
 require 'mackerel/client/host'
 require 'mackerel/client/host_status'
+require 'mackerel/client/host_roles'
 require 'mackerel/client/tsdb'
 require 'mackerel/client/service'
 require 'mackerel/client/service_tsdb'
@@ -20,6 +21,7 @@ module Mackerel
     include Client::Dashboard
     include Client::Host
     include Client::HostStatus
+    include Client::HostRoles
     include Client::Monitor
     include Client::MonitoringCheckReport
     include Client::Tsdb

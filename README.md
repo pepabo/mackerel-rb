@@ -50,6 +50,7 @@ end
 - [x] Getting host information - `GET/api/v0/hosts/<hostId>`
 - [x] Updating host information - `PUT/api/v0/hosts/<hostId>`
 - [x] Updating host status - `POST/api/v0/hosts/<hostId>/status`
+- [x] Updating host roles - `PUT/api/v0/hosts/<hostId>/role-fullnames`
 - [x] Retiring a host - `POST/api/v0/hosts/<hostId>/retire`
 - [x] List of hosts - `GET/api/v0/hosts.json`
 - [x] Getting host metrics - `GET/api/v0/hosts/<hostId>/metrics`
