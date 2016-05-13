@@ -8,6 +8,11 @@ module Mackerel
       def update(id)
         puts JSON.pretty_generate Mackerel.update_host_roles(id, options)
       end
+
+      desc 'delete <hostId>', 'Delete host roles'
+      def delete(id)
+        puts JSON.pretty_generate Mackerel.update_host_roles(id, {roleFullnames: []})
+      end
     end
   end
 end
