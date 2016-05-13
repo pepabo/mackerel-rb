@@ -1,4 +1,5 @@
 require 'mackerel/commands/host_status'
+require 'mackerel/commands/host_roles'
 
 module Mackerel
   module Commands
@@ -19,6 +20,9 @@ module Mackerel
 
       desc 'status <subcommand>', 'Commands about host status control'
       subcommand('status', Commands::HostStatus)
+
+      desc 'roles <subcommand>', 'Commands about host roles control'
+      subcommand('roles', Commands::HostRoles)
 
       desc 'retire ID', 'Retire host'
       def retire(id)

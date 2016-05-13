@@ -24,6 +24,7 @@ describe Mackerel do
     it { is_expected.to be_respond_to(:retire_host) }
     it { is_expected.to be_respond_to(:host_metrics) }
     it { is_expected.to be_respond_to(:update_host_status) }
+    it { is_expected.to be_respond_to(:update_host_roles) }
     it { is_expected.to be_respond_to(:create_tsdb) }
     it { is_expected.to be_respond_to(:create_metrics) }
     it { is_expected.to be_respond_to(:latest_tsdb) }
@@ -81,6 +82,21 @@ describe Mackerel do
     it do
       expect(host_status).to be_a Hash
       expect(host_status.success).to be_truthy
+    end
+  end
+
+  describe '.#update_host_roles' do
+    before do
+      stub_api(:put, "/v0/hosts/#{host_id}/role-fullnames")
+    end
+
+    let!(:host_roles) {
+      described_class.update_host_roles(host_id, roleFullnames: 'service:role')
+    }
+
+    it do
+      expect(host_roles).to be_a Hash
+      expect(host_roles.success).to be_truthy
     end
   end
 
