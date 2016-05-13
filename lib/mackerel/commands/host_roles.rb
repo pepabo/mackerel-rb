@@ -16,4 +16,3 @@ module Mackerel
     end
   end
 end
-
