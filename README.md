@@ -39,6 +39,7 @@ end
 #### Services
 
 - [x] List of Services - `GET/api/v0/services`
+- [x] List of metric-names - `GET/api/v0/service/<serviceName>/metrics-names`
 
 #### Roles
 
