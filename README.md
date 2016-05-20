@@ -54,6 +54,7 @@ end
 - [x] Retiring a host - `POST/api/v0/hosts/<hostId>/retire`
 - [x] List of hosts - `GET/api/v0/hosts.json`
 - [x] Getting host metrics - `GET/api/v0/hosts/<hostId>/metrics`
+- [x] List of metric-names - `GET/api/v0/hosts/<hostId>/metrics-names`
 
 #### Metrics
 

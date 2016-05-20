@@ -115,6 +115,21 @@ describe Mackerel do
     end
   end
 
+  describe '.#host_metric_names' do
+    let(:host_id) { 'METRIC_NAMES_DUMMY' }
+    before do
+      stub_api(:get, "/v0/hosts/#{host_id}/metric-names")
+    end
+
+    let!(:host_metric_names) {
+      described_class.host_metric_names(host_id)
+    }
+
+    it do
+      expect(host_metric_names).to be_a Array
+    end
+  end
+
   describe '.#latest_tsdb' do
     before do
       stub_api(:get, "/v0/tsdb/latest?hostId=DUMMY&name=loadavg5")
