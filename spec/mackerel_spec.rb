@@ -146,4 +146,19 @@ describe Mackerel do
       expect(tsdb[host_id]).to respond_to 'cpu.user.percentage'
     end
   end
+
+  describe '.#services_metric_names' do
+    let(:service_name) { 'METRIC_NAMES_DUMMY' }
+    before do
+      stub_api(:get, "/v0/services/#{service_name}/metric-names")
+    end
+
+    let!(:services_metric_names) {
+      described_class.services_metric_names(service_name)
+    }
+
+    it do
+      expect(services_metric_names).to be_a Array
+    end
+  end
 end
