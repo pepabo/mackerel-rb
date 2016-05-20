@@ -1,0 +1,33 @@
+{
+  "names": [
+    "cpu.guest.percentage",
+    "cpu.idle.percentage",
+    "cpu.iowait.percentage",
+    "cpu.irq.percentage",
+    "cpu.nice.percentage",
+    "cpu.softirq.percentage",
+    "cpu.steal.percentage",
+    "cpu.system.percentage",
+    "cpu.user.percentage",
+    "disk.sda.reads.delta",
+    "disk.sda.writes.delta",
+    "disk.sda1.reads.delta",
+    "disk.sda1.writes.delta",
+    "filesystem.sda1.size",
+    "filesystem.sda1.used",
+    "interface.eth0.rxBytes.delta",
+    "interface.eth0.txBytes.delta",
+    "loadavg5",
+    "memory.active",
+    "memory.buffers",
+    "memory.cached",
+    "memory.free",
+    "memory.inactive",
+    "memory.swap_cached",
+    "memory.swap_free",
+    "memory.swap_total",
+    "memory.total",
+    "memory.used",
+    "uptime"
+  ]
+}

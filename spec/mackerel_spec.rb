@@ -115,6 +115,21 @@ describe Mackerel do
     end
   end
 
+  describe '.#host_metric_names' do
+    let(:host_id) { 'METRIC_NAMES_DUMMY' }
+    before do
+      stub_api(:get, "/v0/hosts/#{host_id}/metric-names")
+    end
+
+    let!(:host_metric_names) {
+      described_class.host_metric_names(host_id)
+    }
+
+    it do
+      expect(host_metric_names).to be_a Array
+    end
+  end
+
   describe '.#latest_tsdb' do
     before do
       stub_api(:get, "/v0/tsdb/latest?hostId=DUMMY&name=loadavg5")
@@ -129,6 +144,21 @@ describe Mackerel do
       expect(tsdb).to respond_to host_id
       expect(tsdb[host_id]).to respond_to 'loadavg5'
       expect(tsdb[host_id]).to respond_to 'cpu.user.percentage'
+    end
+  end
+
+  describe '.#services_metric_names' do
+    let(:service_name) { 'METRIC_NAMES_DUMMY' }
+    before do
+      stub_api(:get, "/v0/services/#{service_name}/metric-names")
+    end
+
+    let!(:services_metric_names) {
+      described_class.services_metric_names(service_name)
+    }
+
+    it do
+      expect(services_metric_names).to be_a Array
     end
   end
 end

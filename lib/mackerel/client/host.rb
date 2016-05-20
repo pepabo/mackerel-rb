@@ -30,6 +30,11 @@ module Mackerel
         response = get "hosts/#{id}/metrics", params
         response.body
       end
+
+      def host_metric_names(id)
+        response = get "hosts/#{id}/metric-names"
+        response.body.names
+      end
     end
   end
 end
