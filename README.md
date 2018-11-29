@@ -85,6 +85,10 @@ end
 - [x] List of Alerts - `GET/api/v0/alerts`
 - [x] Closing Alert - `POST/api/v0/alerts/<alertId>/close`
 
+#### Organization
+
+- [x] Getting Organization - `GET/api/v0/org`
+
 ## Contributing
 
 1. Fork it ( https://github.com/pepabo/mackerel-rb/fork )

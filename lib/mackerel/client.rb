@@ -9,6 +9,7 @@ require 'mackerel/client/service'
 require 'mackerel/client/service_tsdb'
 require 'mackerel/client/monitor'
 require 'mackerel/client/monitoring_check_report'
+require 'mackerel/client/org'
 require 'mackerel/client/role'
 require 'mackerel/client/alert'
 require 'mackerel/response/raise_error'
@@ -24,6 +25,7 @@ module Mackerel
     include Client::HostRoles
     include Client::Monitor
     include Client::MonitoringCheckReport
+    include Client::Org
     include Client::Tsdb
     include Client::Service
     include Client::ServiceTsdb
