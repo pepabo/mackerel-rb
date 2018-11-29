@@ -69,6 +69,7 @@ end
 
 - [ ] Register monitor configurations - `POST/api/v0/monitors`
 - [x] Get monitor configurations - `GET/api/v0/monitors`
+- [x] Get monitor configurations - `GET/api/v0/monitors/<monitorId>`
 - [ ] Update monitor configurations - `PUT/api/v0/monitors/<monitorId>`
 - [ ] Delete monitor configurations - `DELETE/api/v0/monitors/<monitorId>`
 
