@@ -1,8 +1,8 @@
 module Mackerel
   class Client
     module Alert
-      def alerts
-        response = get 'alerts'
+      def alerts(options = {})
+        response = get 'alerts', options
         response.body.alerts
       end
 
