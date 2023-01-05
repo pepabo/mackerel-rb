@@ -17,4 +17,4 @@ jobs:
         ruby-version: 3.2
 
     - run: bundle install
-    - run: bundle exec rake
+    - run: bundle exec rspec
